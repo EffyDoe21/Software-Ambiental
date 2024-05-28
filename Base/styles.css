@@ -164,3 +164,19 @@ header {
   height: 10px; /* Altura de la franja inferior */
   background-color: yellow; /* Color de la franja inferior */
 }
+
+ul {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0; /* Quita el padding por defecto del ul */
+  margin: 0; /* Quita el margen por defecto del ul */
+} 
+
+a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: inherit; /* Hace que el enlace herede el color del texto circundante */
+  margin-left: 10px; /* Añade un margen izquierdo para separar el icono del texto */
+}
+
+ion-icon {
+  font-size: 1.2em; /* Ajusta el tamaño del icono si es necesario */
+}
