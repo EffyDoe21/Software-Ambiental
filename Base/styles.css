@@ -1,0 +1,166 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white; /* Fondo blanco para todo el body */
+  color: black; /* Color de texto negro para visibilidad */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.maxi-perros {
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--title-font-family, 'Mulish');
+  font-size: var(--title-font-size, 30px);
+  color: var(--black, #000000); 
+  text-align: center; 
+}
+
+.sidebar {
+  background-color: #ffd700;
+  width: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar h1,
+.sidebar p,
+.sidebar nav ul li a {
+  color: black; /* Mantener texto negro en el sidebar */
+
+}
+
+main {
+  flex-grow: 1;
+  position: relative;
+  background-color: whitesmoke; /* Fondo blanco para el main */
+  color: black; /* Texto negro para visibilidad */
+  overflow: hidden;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white; /* Color del texto */
+  z-index: 2; /* Asegura que el header esté sobre la imagen */
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+}
+
+.filter-section input,
+.filter-section select,
+.filter-section button {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.filter-section input {
+  padding: 5px 10px;
+}
+
+.filter-section select,
+.filter-section button {
+  background-color: #ffcc00;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease;
+}
+
+.filter-section select:hover,
+.filter-section button:hover {
+  background-color: #ffa500; /* Color de fondo al pasar el ratón */
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  color: yellow;/* Color del texto del usuario */
+}
+
+
+
+.user-section span {
+  margin-left: 30px;
+  font-size: 16px;
+}
+
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px; /* Ajusta esta altura según sea necesario */
+  z-index: 1; /* Posiciona la imagen detrás del header */
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0); /* Fondo negro para la sección de la imagen */
+  overflow: hidden;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.555));
+  z-index: 2;
+}
+
+.imagen {
+  height: 25em;
+  width: 80em;
+  display: block;
+  z-index: 1;
+  opacity: 0.3; 
+  mix-blend-mode: hard-light;/* Controla la opacidad para mezcla con el fondo */
+}
+
+.data-table {
+  position: relative;
+  z-index: 2; /* Asegura que la tabla esté sobre la imagen */
+  margin-top: 320px; /* Ajusta este margen según sea necesario para que la tabla se vea correctamente */
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: red;
+  color: white;
+}
+
+.header-bottom {
+  width: 100%;
+  height: 10px; /* Altura de la franja inferior */
+  background-color: yellow; /* Color de la franja inferior */
+}

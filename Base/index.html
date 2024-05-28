@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAXIPERROS - Sistema de Gestión Ambiental</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+  </head>
+  <body class="header-style">
+    <div class="container ">
+      <aside class="sidebar">  
+        <div class="maxi-perros"><b>MAXI PERROS</b></div> 
+        <p>Sistema de gestión ambiental</p><br><br>
+        <nav>
+          <ul>
+            <li><a href="#">Perfil</a></li><br>
+            <li><a href="#">Gestión documental</a></li><br>
+            <li><a href="#">Mapa de procesos</a></li><br>
+            <li><a href="#">Informes de productos</a></li><br>
+            <li>
+              <a href="#"
+                >Gestión ambiental / Matriz de aspectos e impactos
+                ambientales</a>
+            </li><br>
+            <li><a href="#">Configuración</a></li><br>
+            <li><a href="#">Cerrar sesión</a></li><br>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <header>
+          <div class="header-background"></div>
+          <div class="filter-section">
+            <input type="text" placeholder="Filtrar" />
+            <select>
+              <option>Clase</option>
+            </select>
+            <select>
+              <option>Condición</option>
+            </select>
+            <select>
+              <option>Incidencia</option>
+            </select>
+            <select>
+              <option>Actividad</option>
+            </select>
+            <button id="downloadReport">Descargar Reporte</button>
+          </div>
+          <div class="user-section"> 
+            <ion-icon name="person-circle-outline"></ion-icon> 
+            <b>Administrador</b> 
+          </div>
+        </header>
+        <div class="image-container">
+          <img src="../imagenes/image_2.png" alt="Perro" class="imagen">  
+        </div> 
+        <section class="data-table">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Actividad/Servicio</th>
+                <th>Tipo o clase</th>
+                <th>Aspecto ambiental</th>
+                <th>Impacto ambiental</th>
+                <th>Características</th>
+                <th>Condición</th>
+                <th>Incidencia</th>
+              </tr>
+            </thead>
+            <tbody id="dataTable">
+              <!-- Data rows will be added here dynamically -->
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
